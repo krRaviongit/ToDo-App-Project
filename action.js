@@ -1,4 +1,13 @@
-let todoList=['Wake Up at 6 AM', 'Go to College'];
+let todoList=[
+  {
+    item:'Wake Up at 6 AM', 
+    dueDate: '16/02/2024'
+  }, 
+  {
+    item:'Go to College', 
+    dueDate: '16/02/2024'
+  }
+];
 displayItems();
 
 function addTodo() {
@@ -6,8 +15,9 @@ function addTodo() {
   let dateElement = document.querySelector('#todo-date');
   let todoItem = inputElement.value;
   let todoDate = dateElement.value;
-  todoList.push(todoItem);
+  todoList.push({item: todoItem , dueDate: todoDate});
   inputElement.value = '';
+  dateElement.value = '';
 
   displayItems();
 }
