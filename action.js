@@ -6,3 +6,10 @@ function addTodo() {
   todoList.push(todoItem);
   inputElement.value = '';
 }
+
+function displayItems(){
+  let displayElement = querySelector('#todo-items');
+  for(let i=0; i < todoList.length; i++){
+    displayElement.innerText = displayElement.innerText + todoList[i];
+  }
+}
