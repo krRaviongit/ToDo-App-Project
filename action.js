@@ -1,4 +1,4 @@
-let todoList=[];
+let todoList=['Wake Up at 6 AM', 'Go to College'];
 displayItems();
 
 function addTodo() {
@@ -19,7 +19,7 @@ function displayItems(){
     newHtml += ` 
           <div>
             <span>${todoList[i]}</span>
-            <button>Delete</button>
+            <button onClick="todoList.splice(${i},1); displayItems();">Delete</button>
           </div>
           `;
   }
