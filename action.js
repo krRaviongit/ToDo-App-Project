@@ -1,4 +1,5 @@
 let todoList=[];
+displayItems();
 
 function addTodo() {
   let inputElement = document.querySelector('#todo-input');
