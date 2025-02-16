@@ -11,7 +11,7 @@ function addTodo() {
 }
 
 function displayItems(){
-  let displayElement = querySelector('#todo-items');
+  let displayElement = document.querySelector('#todo-items');
   for(let i=0; i < todoList.length; i++){
     displayElement.innerText = displayElement.innerText + todoList[i];
   }
