@@ -3,7 +3,9 @@ displayItems();
 
 function addTodo() {
   let inputElement = document.querySelector('#todo-input');
+  let dateElement = document.querySelector('#todo-date');
   let todoItem = inputElement.value;
+  let todoDate = dateElement.value;
   todoList.push(todoItem);
   inputElement.value = '';
 
