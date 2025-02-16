@@ -6,6 +6,8 @@ function addTodo() {
   let todoItem = inputElement.value;
   todoList.push(todoItem);
   inputElement.value = '';
+
+  displayItems();
 }
 
 function displayItems(){
