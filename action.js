@@ -28,9 +28,11 @@ function displayItems(){
   let newHtml='';
 
   for(let i=0; i < todoList.length; i++){
+    let{item, dueDate}=todoList[i];
     newHtml += ` 
           <div>
-            <span>${todoList[i]}</span>
+            <span>${item}</span>
+            <span>${dueDate}</span>
             <button onClick="todoList.splice(${i},1); displayItems();">Delete</button>
           </div>
           `;
