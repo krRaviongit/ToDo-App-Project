@@ -24,6 +24,11 @@ body{
 #todo-input, #todo-date{
   font-size: 15px;
   padding: 10px 5px;
+  border-radius: 8px;
+  border: none;
+  background-color: rgb(181, 181, 183);
+  color: rgb(0, 0, 0);
+
 }
 .btn-delete{
   background-color: rgb(197, 23, 23);
