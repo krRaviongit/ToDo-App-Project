@@ -24,9 +24,9 @@ body{
 #todo-input, #todo-date{
   font-size: 15px;
   padding: 10px 5px;
-  border-radius: 8px;
-  border: none;
-  background-color: rgb(181, 181, 183);
+  border-radius: 5px;
+  border: 1px solid black;
+  background-color: rgb(255, 255, 255);
   color: rgb(0, 0, 0);
 
 }
