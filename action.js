@@ -32,7 +32,7 @@ function displayItems(){
     newHtml += `
             <span>${item}</span>
             <span>${dueDate}</span>
-            <button onClick="todoList.splice(${i},1); displayItems();">Delete</button>
+            <button class="btn-delete" onClick="todoList.splice(${i},1); displayItems();">Delete</button>
           `;
   }
   containerElement.innerHTML = newHtml;
