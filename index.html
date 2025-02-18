@@ -13,12 +13,14 @@
 
 <body>
   <h1 id="main-heading">ToDo App</h1>
+  <div class="grid-container">
+    <input id="todo-input" type="text" placeholder="Enter your task here">
+    <input id="todo-date" type="date">
+    <button onclick="addTodo();">Add</button>
+  </div>
 
-  <input id="todo-input" type="text" placeholder="Enter your task here">
-  <input id="todo-date" type="date">
-  <button onclick="addTodo();">Add</button>
 
-  <div class="todo-container"></div>
+  <div class="todo-container grid-container"></div>
 
 
   <script src="action.js"></script>
